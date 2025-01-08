@@ -1,3 +1,3 @@
 #TapatApp
 
-[Descripcio del Projecte (descTapatApp.md)}
+[Descripcio del Projecte] (descTapatApp.md)
