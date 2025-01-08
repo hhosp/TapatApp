@@ -1,4 +1,4 @@
-#Requeriments Tècnics
+# Requeriments Tècnics
 ## 1.Backend
 El backend serà el cor del sistema, encarregat de gestionar dades, usuaris, i la lògica del sistema.
 ### a. Requisits del servidor
@@ -18,6 +18,7 @@ El backend serà el cor del sistema, encarregat de gestionar dades, usuaris, i l
 - Web i Mòbil
 - Llenguatge de programació: Python
 - Compatibilitat dispositius: Android, Ios, Web
+---
 ## 3. Requisits Generals
 ### a. Gestió d'usuari i autenticació
 - Rols d’usuari: Administrador, Cuidadors: Principal i Secundari, Especialista
@@ -29,10 +30,12 @@ El backend serà el cor del sistema, encarregat de gestionar dades, usuaris, i l
 
 ### c. Gestió d’accessibilitat
 - Nivells A, AA y AAA d’accessibilitat: AA
+---
 ## 4. Requisits d'Infraestructura
 - Xarxa i comunicació HTTP
 - Espai d’emmagatzematge al núvol: 1Gb
 - APIs de tercers: No farem servir
+---
 ## 5. Requisits del Procés de Desenvolupament
 - IDE’s: VsCode, IntelliJ
 - Control de Versions: Git
