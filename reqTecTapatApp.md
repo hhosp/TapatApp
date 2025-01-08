@@ -6,13 +6,13 @@ El backend serà el cor del sistema, encarregat de gestionar dades, usuaris, i l
 - Base de dades = MySql
 - Sistema operatiu del servidor: Linux
 - APIs i serveis web: RESTFul i Flask
-### b.Llenguatjes de programació
+### b. Llenguatjes de programació
 - Python
-### c.Seguretat
+### c. Seguretat
 - Autenticació i autorització: Login usuari/password i Tokens de 256 chars
 - Xifratge de dades: HTTPS
-- Còpies de seguretat automàtiques: Si
-## 2.Frontend
+- Còpies de seguretat automàtiques: Carbonite
+## 2. Frontend
 ### a. Tipus de Clients
 - Web i Mòbil
 - Llenguatge de programació: Python
@@ -23,7 +23,7 @@ El backend serà el cor del sistema, encarregat de gestionar dades, usuaris, i l
 - Base de dades: MySql
 - Seguretat: HTTPS
 ### b. Emmagatzematge local i sincronització
-- Dades que es guarden en local, són sensibles?
+- Dades que es guarden en local, són sensibles? Si
 - Seguretat: Token 256 chars
 
 ### c. Gestió d’accessibilitat
