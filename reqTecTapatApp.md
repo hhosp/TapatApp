@@ -12,6 +12,7 @@ El backend serà el cor del sistema, encarregat de gestionar dades, usuaris, i l
 - Autenticació i autorització: Login usuari/password i Tokens de 256 chars
 - Xifratge de dades: HTTPS
 - Còpies de seguretat automàtiques: Carbonite
+---
 ## 2. Frontend
 ### a. Tipus de Clients
 - Web i Mòbil
