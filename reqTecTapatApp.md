@@ -1,5 +1,5 @@
 # Requeriments Tècnics
-## 1.Backend
+## 1. Backend
 El backend serà el cor del sistema, encarregat de gestionar dades, usuaris, i la lògica del sistema.
 ### a. Requisits del servidor
 - Allotjament: Hosting compartit
