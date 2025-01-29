@@ -4,7 +4,7 @@
 
 [Requeriments Tècnics](reqTecTapatApp.md)
 
-## Prototip 1
+## [Prototip 1](/charts/diagrama.mermaid)
 
 ### Definició dels EndPoints
 | Descripció  | End-point     | Method     |Tipus de petició|Parametres| resposta|
