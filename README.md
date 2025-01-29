@@ -6,6 +6,8 @@
 
 ## [Prototip 1](/charts/diagrama.mermaid)
 
+[HTTP Request]()
+
 ### Definició dels EndPoints
 
 | Descripció  | End-point     | Method     |Tipus de petició|Parametres| resposta|
