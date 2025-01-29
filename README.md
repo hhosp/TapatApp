@@ -8,7 +8,7 @@
 
 [Prototip 1](/charts/diagrama.mermaid)
 
-[HTTP Request]()<br>
+[HTTP Request](HTTPRequest.md)<br>
 [HTTP Response](HTTPResponse.md)
 
 ### Definició dels EndPoints
