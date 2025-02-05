@@ -1,0 +1,20 @@
+ flowchart TB;
+    subgraph Login
+    A[Bienvenida - Inicio] --> B{Login}
+    B --> |Credenciales incorrectas|Y[Error]---
+    B --> |Nuevo Usuario|C[Registro] --> B
+    end
+    subgraph Home
+    B --> |Credenciales correctas|D[Lobby]
+    D --> E[Child List]
+    D --> G[Configuracion]
+    D --> S[Temporizador] --> U[Start/Stop]
+    D --> Salir
+    S --> Reset
+    end
+    subgraph Child
+    E --> F[Child]
+    F --> K[Datos medicos]
+    F --> L[Progreso Tapat] --> I[Jornada diaria]
+    F --> T[Cuidadores]
+    end
