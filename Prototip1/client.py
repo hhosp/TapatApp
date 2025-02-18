@@ -14,8 +14,8 @@ class DaoUser:
     def __init__(self, username):
         self.username = username
     
-    def getUserByUsername(self, username):
-        response = requests.get(f'http://localhost:10050/prototip1/getuser?username={username}')
+    def getUserByUsername(username):
+        response = requests.get(f'http://localhost:10050/prototip/getuser/{username}')
         if response.status_code == 200:
             user_data = response.json()
             user = User(user_data['id'], user_data['username'], user_data['password'], user_data['email'])
