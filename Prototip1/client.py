@@ -47,6 +47,7 @@ class Error:
     def __str__(self):
         return "ERROR, Code: " + str(self.code) + ". Description: " + self.description
 
-error1 = Error(404, "Not found")
-print(View.showInfoError(error1))
+if __name__ == "__main__":
+    username = ViewConsole.getInputUsername()
+    ViewConsole.showUserInfo(username)
 

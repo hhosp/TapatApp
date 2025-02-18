@@ -29,9 +29,6 @@ class DAOUsers:
             
 daoUser = DAOUsers()
 
-print(daoUser.getUserByUsername("notrobat"))
-print(daoUser.getUserByUsername("usuari1"))
-
 app = Flask(__name__)
 
 
