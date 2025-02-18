@@ -48,6 +48,6 @@ class Error:
         return "ERROR, Code: " + str(self.code) + ". Description: " + self.description
 
 if __name__ == "__main__":
-    username = ViewConsole.getInputUsername()
-    ViewConsole.showUserInfo(username)
+    username = View.getUsernameByConsole()
+    View.showInfoUser(username)
 
