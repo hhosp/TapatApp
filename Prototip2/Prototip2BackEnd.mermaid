@@ -1,0 +1,25 @@
+classDiagram
+class WebService {
+    requestUsername() String
+    requestPassword() String
+}
+class DAOUser {
+    - UsersList: Array<User>[]
+}
+class User {
+    String username
+    String password
+    String email
+}
+class Child {
+    int id
+    String name
+}
+class TapatProgres {
+    int temporizador
+}
+WebService --> DAOUser
+DAOUser --> User: requests User data
+User --> DAOUser: retrieves User data
+User --> Child
+Child --> TapatProgres
