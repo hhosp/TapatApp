@@ -1,0 +1,10 @@
+ flowchart TB;
+    B{Login}
+    B --> |Credenciales correctas|D[Lobby]
+    B --> |Nuevo Usuario|C[Registro] --> |Cuenta creada|B
+    D --> E[Child List]
+    D --> R[Datos usuario]
+    D --> Salir
+    E --> F[Child]
+    F --> K[Datos medicos]
+    F --> L[Progreso Tapat]
