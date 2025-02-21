@@ -1,22 +1,24 @@
 classDiagram
 class WebService {
-    requestUsername() String
-    requestPassword() String
+    +requestUsername() String
+    +requestPassword() String
 }
 class DAOUser {
-    - UsersList: Array<User>[]
+    +UsersList: Array<User>[]
 }
 class User {
-    String username
-    String password
-    String email
+    +String username
+    +String password
+    +String email
+    +showInfoUser(User)
 }
 class Child {
-    int id
-    String name
+    +int id
+    +String name
+    +showInfoChild(Child)
 }
 class TapatProgres {
-    int temporizador
+    +int temporizador
 }
 WebService --> DAOUser
 DAOUser --> User: requests User data
