@@ -18,7 +18,7 @@ class DaoUser:
         response = requests.get(f'http://localhost:10050/prototip/getuser/{username}')
         if response.status_code == 200:
             user_data = response.json()
-            user = User(user_data['id'], user_data['username'], user_data['password'], user_data['email'])
+            user = User(user_data['id'], user_data['user'], user_data['password'], user_data['email'])
             return user
         else:
             return None
@@ -32,7 +32,7 @@ class View:
         return username
     def showInfoUser(username):
         user = DaoUser.getUserByUsername(username)
-        if user:
+        if (user):
             print(f"User Info: {user}")
         else:
             print(f"User with username {username} not found")
