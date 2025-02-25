@@ -1,4 +1,4 @@
-# TapatApp  HOLA
+# TapatApp
 
 [Descripcio del Projecte](descTapatApp.md)
 
