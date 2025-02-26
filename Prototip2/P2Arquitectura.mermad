@@ -1,0 +1,14 @@
+flowchart LR;
+    subgraph FrontEnd:
+        B[View] <--> C[DAOUser]
+        B <--> D[DAOChild]
+    end
+    subgraph BackEnd:
+        U <--> L[BBDD]
+        H <--> L
+    end
+        C <--> |HTTP Request/Response|W[WebService]
+        D <--> |HTTP Request/Response|W
+        W <--> |HTTP Request/Response|U[DAOUser]
+        W <--> |HTTP Request/Response|H[DAOChild]
+    

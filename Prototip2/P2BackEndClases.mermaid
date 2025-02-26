@@ -12,7 +12,7 @@ class User {
     +String email
     +showInfoUser(User)
 }
-class Child {
+class DAOChild {
     +int id
     +String name
     +showInfoChild(Child)
@@ -21,6 +21,7 @@ class TapatProgres {
     +int temporizador
 }
 WebService --> DAOUser
+WebService --> DAOChild
 DAOUser --> User: requests User data
 User --> DAOUser: retrieves User data
 User --> Child

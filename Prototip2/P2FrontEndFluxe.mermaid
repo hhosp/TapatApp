@@ -1,9 +1,5 @@
  flowchart TB;
     B{Login}
+    D --> |Credenciales incorrectas| B
     B --> |Credenciales correctas|D[Lobby]
     D --> E[Child List]
-    D --> R[Datos usuario]
-    D --> Salir
-    E --> F[Child]
-    F --> K[Datos medicos]
-    F --> L[Progreso Tapat]
