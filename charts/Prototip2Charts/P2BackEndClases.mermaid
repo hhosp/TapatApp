@@ -1,0 +1,50 @@
+classDiagram
+class WebService {
+    + showUserInfo(int user_id)
+    + showChildInfo(int child_id)
+    + showTapInfo(int tap_id)
+}
+class DAOUser {
+    + ArrayList<User> users
+    + getUserById(int user_id)
+}
+class User {
+    + int user_id
+    + String username
+    + String password
+    + String email
+}
+class DAOChild {
+    + ArrayList<Child> children
+    + ArrayList<Tap> taps
+    + getChildByUserId(int user_id)
+    + getTapByChildId(int child_id)
+}
+class Child {
+    + int child_id
+    + String child_name
+    + int sleep_average
+    + String treatment
+    + int time
+}
+class Tap {
+    + int tap_id
+    + int child_id
+    + String status
+    + int user_id
+    + Date init
+    + Date end
+}
+
+WebService --> DAOUser: requests User by user_id
+DAOUser --> WebService: returns User
+WebService --> DAOChild: requests Child by child_id
+DAOChild --> WebService: returns Child
+WebService --> DAOChild: requests Tap by child_id
+DAOChild --> WebService: returns Tap
+DAOUser --> User: requests User data
+User --> DAOUser: returns User data
+DAOChild --> Child : requests Child data
+Child --> DAOChild: returns Child data
+DAOChild --> Tap: requests Tap data
+Tap --> DAOChild: returns Tap data
