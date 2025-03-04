@@ -10,7 +10,7 @@ for user in dadesServer.users:
 provaUser = User(id=1, username="Kurl", password="12345", email="prova2@gmail.com")
 print(provaUser)
 #Prova de la classe Child
-provaChild = Child(id=1, child_name = "Mohamed", sleep_average = 8, treatment_id = 1, time = 0)
+provaChild = Child(id="1", child_name = "Mohamed", sleep_average = "8", treatment_id = "1", time = "0")
 print(provaChild)
 
 class DAOUser:
