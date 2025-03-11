@@ -22,7 +22,7 @@ class Child:
         self.time = time
 
     def __str__(self):
-        return "Child: " + self.child_name + " with id: " + self.id + ", Sleep average: " + self.sleep_average + ", Treatment id: " + self.treatment_id + ", Time: " + self.time
+        return "Child: " + self.child_name + " with id: " + str(self.id) + ", Sleep average: " + str(self.sleep_average) + ", Treatment id: " + str(self.treatment_id) + ", Time: " + str(self.time)
 
 class Tap:
     def __init__(self, id, child_id, status_id, user_id, init, end):
