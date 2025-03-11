@@ -32,4 +32,8 @@ class DAOChild:
         return [child for child in self.children if child.id in child_ids]
         
     def getTapByChild(self, child_id):
-        pass 
+        return [tap for tap in dadesServer.taps if tap.child_id == child_id]
+
+app = Flask(__name__)
+DAOUser = DAOUser()
+DAOChild = DAOChild()
