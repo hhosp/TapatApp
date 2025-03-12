@@ -1,5 +1,37 @@
 import requests
-from dadesServer import User, Child, Tap
+
+class User:
+    def __init__(self, user_id, username, password, email):
+        self.user_id = user_id
+        self.username = username
+        self.password = password
+        self.email = email
+
+    def __str__(self):
+        return f"User(id={self.user_id}, username={self.username}, email={self.email})"
+
+class Child:
+    def __init__(self, child_id, child_name, sleep_average, treatment, time):
+        self.child_id = child_id
+        self.child_name = child_name
+        self.sleep_average = sleep_average
+        self.treatment = treatment
+        self.time = time
+
+    def __str__(self):
+        return f"Child(id={self.child_id}, name={self.child_name}, sleep_average={self.sleep_average}, treatment={self.treatment}, time={self.time})"
+
+class Tap:
+    def __init__(self, tap_id, child_id, status, user_id, init, end):
+        self.tap_id = tap_id
+        self.child_id = child_id
+        self.status = status
+        self.user_id = user_id
+        self.init = init
+        self.end = end
+
+    def __str__(self):
+        return f"Tap(id={self.tap_id}, child_id={self.child_id}, status={self.status}, user_id={self.user_id}, init={self.init}, end={self.end})"
 
 class DAOUser:
     @staticmethod
