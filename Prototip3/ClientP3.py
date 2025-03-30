@@ -34,11 +34,15 @@ class DAOChild:
 class View:
     @staticmethod
     def login():
+        user = int(input("Enter your user id: "))
+        if user < 0 or user > 1:
+            print(f"Error: user with user_id:{user} doesn't exist")
+            return None
         data = {
-            "id": "1",
-            "username": "mare",
-            "password": "12345",
-            "email": "prova@gmail.com"
+            "id": dadesServer.users[user].id,
+            "username": dadesServer.users[user].username,
+            "password": dadesServer.users[user].password,
+            "email": dadesServer.users[user].email
         }
 
         TOKEN_VALID = "secret123"
