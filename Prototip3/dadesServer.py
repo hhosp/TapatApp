@@ -33,6 +33,8 @@ class Tap:
         self.init = init
         self.end = end
 
+    def __str__(self):
+        return f"Tap(id={self.id}, child_id={self.child_id}, status={self.status_id}, user_id={self.user_id}, init={self.init}, end={self.end})"
 class Role:
     def __init__(self, id, type_rol):
         self.id = id
